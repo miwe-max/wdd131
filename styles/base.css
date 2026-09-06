@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family: Poppins, Arial, sans-serif;
+
+    line-height: 1.6;
+
+}
+
+
+
+header {
+
+    background: #24577a;
+
+    color: white;
+
+}
+
+
+
+#course-title {
+
+    display: block;
+
+    text-align: center;
+
+    padding: 1.5rem;
+
+    font-size: 1.5rem;
+
+}
+
+
+
+nav {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    background: #333;
+
+}
+
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 1rem;
+
+}
+
+
+
+nav a:hover {
+
+    background: #555;
+
+    color: #ffd700;
+
+}
+
+
+
+main {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 1rem;
+
+}
+
+
+
+h1 {
+
+    text-align: center;
+
+}
+
+
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 1rem;
+
+}
+
+
+
+.card {
+
+    border: 1px solid #aaa;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+}
+
+
+
+.card h2 {
+
+    background: #24577a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: .7rem;
+
+}
+
+
+
+.about {
+
+    display: flex;
+
+    padding: 1rem;
+
+    gap: 1rem;
+
+}
+
+
+
+.about img {
+
+    width: 150px;
+
+    height: auto;
+
+}
+
+
+
+.country {
+
+    display: flex;
+
+    gap: 1rem;
+
+    padding: 1rem;
+
+    align-items: center;
+
+}
+
+
+
+.country img {
+
+    width: 140px;
+
+}
+
+
+
+footer {
+
+    background: #24577a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 1rem;
+
+    margin-top: 2rem;
+
+}
+
+
+
+@media(max-width:700px) {
+
+
+    .cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .about,
+    .country {
+
+        flex-direction: column;
+
+    }
+
+
+    nav {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
+}
