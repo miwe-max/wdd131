@@ -1,0 +1,53 @@
+@media screen and (min-width:700px) {
+
+
+    #menuButton {
+
+        display: none;
+
+    }
+
+
+
+    header {
+
+        display: flex;
+
+        justify-content: space-between;
+
+    }
+
+
+
+    nav {
+
+        display: flex;
+
+        flex-direction: row;
+
+        width: auto;
+
+    }
+
+
+
+    nav a {
+
+        padding: 1rem 2rem;
+
+    }
+
+
+
+    .album {
+
+        grid-template-columns:
+
+            repeat(3, 1fr);
+
+        gap: 1rem;
+
+    }
+
+
+}

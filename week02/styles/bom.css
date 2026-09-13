@@ -1,0 +1,91 @@
+body {
+
+    font-family: Arial, sans-serif;
+
+    max-width: 600px;
+
+    margin: auto;
+
+    padding: 1rem;
+
+}
+
+
+
+h1 {
+
+    text-align: center;
+
+    background-color: #4a6fa5;
+
+    color: white;
+
+    padding: 1rem;
+
+}
+
+
+
+section {
+
+    margin-bottom: 2rem;
+
+}
+
+
+
+input {
+
+    padding: .5rem;
+
+    width: 60%;
+
+}
+
+
+
+button {
+
+    padding: .5rem;
+
+    cursor: pointer;
+
+}
+
+
+
+li {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    background: #eeeeee;
+
+    padding: .7rem;
+
+    margin: .5rem 0;
+
+}
+
+
+
+li button {
+
+    background: red;
+
+    color: white;
+
+    border: none;
+
+}
+
+
+
+footer {
+
+    text-align: center;
+
+    margin-top: 2rem;
+
+}
