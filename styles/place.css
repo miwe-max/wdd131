@@ -1,0 +1,128 @@
+:root {
+    --primary-color: #008751;
+    /* Nigerian flag green */
+    --secondary-color: #ffffff;
+    /* White from the Nigerian flag */
+    --background-color: #008751;
+    /* Nigerian flag green */
+    --text-color: #ffffff;
+    /* White for text */
+    --weather-bg: #ffffff;
+    /* White background for weather */
+    --attractions-bg: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent black for attractions */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+}
+
+header {
+    background-color: var(--background-color);
+    text-align: center;
+    color: var(--text-color);
+    padding: 1.5rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 1.5rem;
+    color: var(--text-color);
+    text-align: center;
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+aside {
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: "Lato", system-ui;
+    font-weight: 900;
+    font-style: normal;
+}
+
+h2 {
+    padding: 1rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.card {
+    background-color: var(--text-color);
+    border-radius: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.label {
+    font-size: 0.85rem;
+    text-align: right;
+    font-family: "Lato", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.value {
+    font-size: 0.9rem;
+    font-family: "Lato", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--weather-bg);
+}
+
+footer::after {
+    content: " 🌍 Explore Nigeria";
+    display: inline-block;
+    margin-left: 1rem;
+    font-family: "Poppins", system-ui;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+/* Show SVG weather icon only on mobile screens */
+@media screen and (max-width: 800px) {
+    .weather-icon {
+        display: block;
+    }
+}

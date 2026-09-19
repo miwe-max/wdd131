@@ -1,0 +1,12 @@
+/* Ensure that images scale responsively */
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* Alternatively, you can use object-fit for consistent aspect ratio control */
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,59 @@
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    main {
+        position: relative;
+    }
+
+    .card {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+        opacity: 0.9;
+    }
+
+    .data {
+        position: absolute;
+        top: 2rem;
+        left: 1rem;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 2rem;
+        right: 1rem;
+    }
+
+    h2 {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        border-radius: 0.5rem;
+    }
+
+    .hero {
+        z-index: 1;
+    }
+
+    .data,
+    .weather {
+        z-index: 2;
+    }
+
+    /* Pseudo-element weather icon for desktop view */
+    .weather::before {
+        content: "☀️";
+        /* Example of a sun emoticon */
+        font-size: 2rem;
+        display: block;
+        border-radius: 1.5rem;
+        margin-bottom: -4rem;
+        margin-left: 12rem;
+        margin-right: 1rem;
+    }
+
+    .weather-icon {
+        display: none;
+        /* Hide SVG in desktop view */
+    }
+}
