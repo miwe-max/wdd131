@@ -1,4 +1,5 @@
 @media screen and (min-width: 800px) {
+
     h1 {
         font-size: 3rem;
     }
@@ -8,8 +9,8 @@
     }
 
     .card {
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+        border: 1px solid rgb(0 0 0 / 10%);
+        box-shadow: 0 0 2rem rgb(0 0 0 / 30%);
         opacity: 0.9;
     }
 
@@ -40,20 +41,14 @@
         z-index: 2;
     }
 
-    /* Pseudo-element weather icon for desktop view */
-    .weather::before {
-        content: "☀️";
-        /* Example of a sun emoticon */
+    /* Weather icon added after the Weather heading on desktop */
+    .weather h2::after {
+        content: " ☀️";
         font-size: 2rem;
-        display: block;
-        border-radius: 1.5rem;
-        margin-bottom: -4rem;
-        margin-left: 12rem;
-        margin-right: 1rem;
     }
 
+    /* Hide the SVG weather icon on desktop */
     .weather-icon {
         display: none;
-        /* Hide SVG in desktop view */
     }
 }
