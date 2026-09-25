@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Events | SkillRise Abia</title>
+
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <script src="../scripts/main.js" defer></script>
+
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="container nav-container">
+
+            <a href="../index.html" class="logo">
+                SkillRise <span>Abia</span>
+            </a>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="main-nav" id="main-nav">
+
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a class="active" href="events.html">Events</a></li>
+                    <li><a href="success-stories.html">Success Stories</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="page-hero">
+
+            <div class="container">
+
+                <h1>Upcoming Events</h1>
+
+                <p>
+                    Explore upcoming SkillRise Abia workshops,
+                    training sessions and seminars.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="filter-box">
+
+                    <label for="event-filter">
+                        Filter events
+                    </label>
+
+                    <select id="event-filter">
+
+                        <option value="All">
+                            All Events
+                        </option>
+
+                        <option value="Skills">
+                            Skills
+                        </option>
+
+                        <option value="Entrepreneurship">
+                            Entrepreneurship
+                        </option>
+
+                        <option value="Innovation">
+                            Innovation
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Filled dynamically using JavaScript -->
+
+                <div id="all-event-list" class="card-grid"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="container footer-grid">
+
+            <div>
+                <h2>SkillRise Abia</h2>
+
+                <p>
+                    Skills, entrepreneurship and economic advancement.
+                </p>
+            </div>
+
+            <div>
+
+                <h3>Navigation</h3>
+
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3>Newsletter</h3>
+
+                <form class="newsletter-form">
+
+                    <label class="sr-only" for="events-email">
+                        Email
+                    </label>
+
+                    <input id="events-email" type="email" placeholder="Enter your email" required>
+
+                    <button type="submit">
+                        Subscribe
+                    </button>
+
+                </form>
+
+                <p class="form-message newsletter-message"></p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy;
+                <span class="current-year"></span>
+                SkillRise Abia.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
