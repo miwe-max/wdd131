@@ -18,40 +18,59 @@
         <header>
             <h1>Product Review</h1>
         </header>
+
         <main>
             <form id="reviewForm" action="review.html" method="get">
+
                 <div class="form-group">
-                    <label for="productName">Product Name <span class="required">*</span></label>
+                    <label for="productName">
+                        Product Name <span class="required">*</span>
+                    </label>
+
                     <select id="productName" name="productName" required>
                         <option value="" disabled selected>Select a Product ...</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label>Overall Rating <span class="required">*</span></label>
+                    <label>
+                        Overall Rating <span class="required">*</span>
+                    </label>
+
                     <div class="star-rating">
                         <input type="radio" id="star5" name="rating" value="5" required>
                         <label for="star5" title="5 stars">☆</label>
-                        <input type="radio" id="star4" name="rating" value="4">
+
+                        <input type="radio" id="star4" name="rating" value="4" required>
                         <label for="star4" title="4 stars">☆</label>
-                        <input type="radio" id="star3" name="rating" value="3">
+
+                        <input type="radio" id="star3" name="rating" value="3" required>
                         <label for="star3" title="3 stars">☆</label>
-                        <input type="radio" id="star2" name="rating" value="2">
+
+                        <input type="radio" id="star2" name="rating" value="2" required>
                         <label for="star2" title="2 stars">☆</label>
-                        <input type="radio" id="star1" name="rating" value="1">
+
+                        <input type="radio" id="star1" name="rating" value="1" required>
                         <label for="star1" title="1 star">☆</label>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="installDate">Date of Installation <span class="required">*</span></label>
+                    <label for="installDate">
+                        Date of Installation <span class="required">*</span>
+                    </label>
+
                     <input type="date" id="installDate" name="installDate" required>
                 </div>
 
                 <div class="form-group">
-                    <label>Which features did you find useful in the product?<span class="optional">(Check all that
-                            apply)</span></label>
+                    <label>
+                        Which features did you find useful in the product?
+                        <span class="optional">(Check all that apply)</span>
+                    </label>
+
                     <div class="checkbox-group">
+
                         <div class="checkbox-item">
                             <input type="checkbox" id="durability" name="features" value="Durability">
                             <label for="durability">Durability</label>
@@ -71,21 +90,28 @@
                             <input type="checkbox" id="design" name="features" value="Design">
                             <label for="design">Design</label>
                         </div>
+
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="review">Written Review <span class="optional">(Optional)</span></label>
+                    <label for="review">
+                        Written Review <span class="optional">(Optional)</span>
+                    </label>
+
                     <textarea id="review" name="review" rows="4"></textarea>
                 </div>
 
                 <div class="form-group">
-                    <label for="userName">Your Name <span class="optional">(Optional)</span></label>
+                    <label for="userName">
+                        Your Name <span class="optional">(Optional)</span>
+                    </label>
+
                     <input type="text" id="userName" name="userName">
                 </div>
 
-
                 <button type="submit">Post Review</button>
+
             </form>
         </main>
     </div>
